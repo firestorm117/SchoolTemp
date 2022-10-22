@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Praticals_11</title>
+    <title>Unity WebGL Player | Refraction_GlassSlab</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Praticals_11</div>
+        <div id="unity-build-title">Refraction_GlassSlab</div>
       </div>
     </div>
     <script>
@@ -58,12 +58,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/sonometer.loader.js";
       var config = {
-        dataUrl: buildUrl + "/sonometer.data.unityweb",
-        frameworkUrl: buildUrl + "/sonometer.framework.js.unityweb",
-        codeUrl: buildUrl + "/sonometer.wasm.unityweb",
+        dataUrl: buildUrl + "/sonometer.data",
+        frameworkUrl: buildUrl + "/sonometer.framework.js",
+        codeUrl: buildUrl + "/sonometer.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Praticals_11",
+        productName: "Refraction_GlassSlab",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -83,13 +83,11 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
-
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
