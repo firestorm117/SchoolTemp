@@ -103,10 +103,14 @@
 
       loadingBar.style.display = "block";
       const data = JSON.stringify({
-        simulationID: "ddsd",
-        chapterId: "dksn",
-        token: "skdmk",
+        simulationID: "TEMPeratyID",
+        token:
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXIxLjYxOEB2aS52aWduYW0uaW4iLCJpYXQiOjE2OTc0ODYxMzgsImV4cCI6MTcyOTAyMjEzOH0.Tzjpb5cOodx5D9pX2T68k8Thbw-kRB3zCQ_SChnWNIE",
+        source: "stage",
       });
+      // const data = JSON.stringify({
+      //   saveData: { reactionNumber: 0 },
+      // });
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
